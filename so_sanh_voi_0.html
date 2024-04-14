@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<h1>SO SÁNH VỚI 0</h1>
+<input type="number" id="so" placeholder="Nhập số nguyên bất kỳ">
+<button onclick="getdata()"> Kết quả</button>
+<h3 id="kq"></h3>
+<body>
+<script>
+    function getdata(){
+        let data = document.getElementById('so').value;
+        if (data>0){
+            document.getElementById('kq').innerHTML = 'Số lớn hơn 0';
+        }
+        else if (data == 0){
+            document.getElementById('kq').innerHTML = 'Bằng số 0';
+        }
+        else {
+            document.getElementById('kq').innerHTML = 'Số nhỏ hơn 0';
+        }
+    }
+</script>
+
+</body>
+</html>
